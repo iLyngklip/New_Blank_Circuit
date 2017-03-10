@@ -1,0 +1,28 @@
+V3 20
+FL //mac/home/Desktop/New_Blank_Circuit/circuit/250K/Papilio_One_250K.vhf 2017/03/03.14:55:23 P.20131013
+FL C:/New_Blank_Circuit/circuit/250K/Papilio_One_250K.vhf 2017/03/08.15:10:27 P.20131013
+EN work/Papilio_One_250K 0 \
+      FL C:/New_Blank_Circuit/circuit/250K/Papilio_One_250K.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Papilio_One_250K/BEHAVIORAL 0 \
+      FL C:/New_Blank_Circuit/circuit/250K/Papilio_One_250K.vhf \
+      EN work/Papilio_One_250K 0 CP ROM256X1
+FL C:/New_Blank_Circuit/circuit/250K/Utility.vhf 2017/03/09.14:17:45 P.20131013
+EN work/Utility 1489065469 FL C:/New_Blank_Circuit/circuit/250K/Utility.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Utility/BEHAVIORAL 1489065470 \
+      FL C:/New_Blank_Circuit/circuit/250K/Utility.vhf EN work/Utility 1489065469 \
+      CP Wing_GPIO CP INV
+FL C:/New_Blank_Circuit/circuit/Main.vhd 2017/03/09.14:17:44 P.20131013
+EN work/ram_16x1s 1489066273 FL C:/New_Blank_Circuit/circuit/Main.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ram_16x1s/xilinx 1489066274 \
+      FL C:/New_Blank_Circuit/circuit/Main.vhd EN work/ram_16x1s 1489066273 \
+      CP RAM16X1S
+EN work/ram_16x4s 1489066275 \
+      FL C:/New_Blank_Circuit/circuit/Main.vhd PB ieee/std_logic_1164 1381692176
+AR work/ram_16x4s/xilinx 1489066276 \
+      FL C:/New_Blank_Circuit/circuit/Main.vhd EN work/ram_16x4s 1489066275 \
+      CP ram_16x1s

@@ -1,0 +1,531 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: Utility.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Utility.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Utility"
+Output Format                      : NGC
+Target Device                      : xc3s250e-4-vq100
+
+---- Source Options
+Top Module Name                    : Utility
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../../../DesignLab-1.0.8/libraries/Benchy" "../../../DesignLab-1.0.8/libraries/BitCoin_Miner" "../../../DesignLab-1.0.8/libraries/Building_Blocks" "../../../DesignLab-1.0.8/libraries/Clocks" "../../../DesignLab-1.0.8/libraries/Gameduino" "../../../DesignLab-1.0.8/libraries/HQVGA" "../../../DesignLab-1.0.8/libraries/Papilio_Hardware" "../../../DesignLab-1.0.8/libraries/RGB_Matrix" "../../../DesignLab-1.0.8/libraries/Robot_Control_Library" "../../../DesignLab-1.0.8/libraries/VGA_ZPUino" "../../../DesignLab-1.0.8/libraries/VGA_ZXSpectrum" "../../../DesignLab-1.0.8/libraries/ZPUino_2" "../../../DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/New_Blank_Circuit/circuit/250K/Utility.vhf" in Library work.
+Entity <Utility> compiled.
+Entity <Utility> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/DesignLab-1.0.8/libraries/Papilio_Hardware/Wing_GPIO.vhd" in Library DesignLab.
+Entity <Wing_GPIO> compiled.
+Entity <Wing_GPIO> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Utility> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <Wing_GPIO> in library <DesignLab> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Utility> in library <work> (Architecture <BEHAVIORAL>).
+Entity <Utility> analyzed. Unit <Utility> generated.
+
+Analyzing Entity <Wing_GPIO> in library <DesignLab> (Architecture <Behavioral>).
+Entity <Wing_GPIO> analyzed. Unit <Wing_GPIO> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Wing_GPIO>.
+    Related source file is "C:/DesignLab-1.0.8/libraries/Papilio_Hardware/Wing_GPIO.vhd".
+Unit <Wing_GPIO> synthesized.
+
+
+Synthesizing Unit <Utility>.
+    Related source file is "C:/New_Blank_Circuit/circuit/250K/Utility.vhf".
+WARNING:Xst:2565 - Inout <Arduino_0> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_1> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_2> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_3> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_4> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_5> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_6> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_7> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_8> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_9> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<10>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<11>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<12>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<13>> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_10> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_11> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_12> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_13> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_14> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<14>> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_20> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_15> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_21> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_16> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_22> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_17> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_23> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_18> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<20>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<15>> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_24> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_19> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_25> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_30> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_26> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_31> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_32> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_27> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_33> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_28> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<21>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<16>> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_34> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_29> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_40> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_35> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_41> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_36> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_42> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_37> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_43> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_38> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<22>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<17>> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_44> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_39> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_50> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_45> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_51> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_46> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_52> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_47> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_53> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_48> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<23>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<18>> is never assigned.
+WARNING:Xst:2565 - Inout <Arduino_49> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<19>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<24>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<25>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<30>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<31>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<26>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH0> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH1> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH2> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH3> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<32>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<27>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH4> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH5> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH6> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AH7> is never assigned.
+WARNING:Xst:647 - Input <ext_pins_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2565 - Inout <ext_pins_inout<33>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<28>> is never assigned.
+WARNING:Xst:1306 - Output <ext_pins_out> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<29>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<34>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<35>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<40>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL0> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL1> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL2> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<41>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<36>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL3> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL4> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL5> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH0> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL6> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH1> is never assigned.
+WARNING:Xst:2565 - Inout <WING_AL7> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH2> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<42>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<37>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH3> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH4> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH5> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH6> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BH7> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<43>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<38>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<44>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<39>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<50>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<45>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL0> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL1> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL2> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<51>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<46>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL3> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL4> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH0> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL5> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH1> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL6> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH2> is never assigned.
+WARNING:Xst:2565 - Inout <WING_BL7> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<52>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<47>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH3> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH4> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH5> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH6> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CH7> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<53>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<48>> is never assigned.
+WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2565 - Inout <ext_pins_inout<49>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<54>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<55>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<60>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL0> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL1> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL2> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<56>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<61>> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL3> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL4> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL5> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL6> is never assigned.
+WARNING:Xst:2565 - Inout <WING_CL7> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<57>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<62>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<58>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<63>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<59>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<64>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<65>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<70>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<71>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<66>> is never assigned.
+WARNING:Xst:647 - Input <RXD> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2565 - Inout <ext_pins_inout<67>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<72>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<68>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<73>> is never assigned.
+WARNING:Xst:1306 - Output <DUO_LED> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<69>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<74>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<75>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<80>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<76>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<81>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<77>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<82>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<78>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<83>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<79>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<84>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<85>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<90>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<86>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<91>> is never assigned.
+WARNING:Xst:1306 - Output <TXD> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<87>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<92>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<88>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<93>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<89>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<94>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<95>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<96>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<97>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<98>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<99>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<100>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<0>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<1>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<2>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<3>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<4>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<5>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<6>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<7>> is never assigned.
+WARNING:Xst:1306 - Output <LED> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<8>> is never assigned.
+WARNING:Xst:2565 - Inout <ext_pins_inout<9>> is never assigned.
+WARNING:Xst:653 - Signal <XLXN_336> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <XLXN_335> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXN_334> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <XLXN_333> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXN_332> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <XLXN_331> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXN_330> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <XLXN_329> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXN_328> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <XLXN_327> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <XLXN_326> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <XLXN_325> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Utility> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <XLXI_22> of the block <Wing_GPIO> are unconnected in block <Utility>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <XLXI_23> of the block <Wing_GPIO> are unconnected in block <Utility>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <XLXI_24> of the block <Wing_GPIO> are unconnected in block <Utility>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <XLXI_25> of the block <Wing_GPIO> are unconnected in block <Utility>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <XLXI_26> of the block <Wing_GPIO> are unconnected in block <Utility>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <XLXI_27> of the block <Wing_GPIO> are unconnected in block <Utility>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Utility> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Utility, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Utility.ngr
+Top Level Output File Name         : Utility
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 412
+
+Cell Usage :
+# BELS                             : 1
+#      INV                         : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250evq100-4 
+
+ Number of Slices:                        1  out of   2448     0%  
+ Number of 4 input LUTs:                  1  out of   4896     0%  
+ Number of IOs:                         412
+ Number of bonded IOBs:                   2  out of     66     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 6.034ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.034ns (Levels of Logic = 3)
+  Source:            DUO_SW1 (PAD)
+  Destination:       ARD_RESET (PAD)
+
+  Data Path: DUO_SW1 to ARD_RESET
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  DUO_SW1_IBUF (DUO_SW1_IBUF)
+     INV:I->O              1   0.704   0.420  XLXI_48 (ARD_RESET_OBUF)
+     OBUF:I->O                 3.272          ARD_RESET_OBUF (ARD_RESET)
+    ----------------------------------------
+    Total                      6.034ns (5.194ns logic, 0.840ns route)
+                                       (86.1% logic, 13.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.91 secs
+ 
+--> 
+
+Total memory usage is 300136 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  228 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
