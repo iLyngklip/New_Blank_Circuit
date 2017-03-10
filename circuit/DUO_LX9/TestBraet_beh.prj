@@ -1,0 +1,2 @@
+vhdl work "../main_main.vhd"
+vhdl work "../TestBraet.vhd"

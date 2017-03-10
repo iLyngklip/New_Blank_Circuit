@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/New_Blank_Circuit/circuit/DUO_LX9/TestBraet_isim_beh.exe -prj C:/New_Blank_Circuit/circuit/DUO_LX9/TestBraet_beh.prj TestBraet 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/New_Blank_Circuit/circuit/DUO_LX9/../main_main.vhd" into library work
+Parsing VHDL file "C:/New_Blank_Circuit/circuit/DUO_LX9/../TestBraet.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159456 KB
+Fuse CPU Usage: 296 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package numeric_std
+Compiling architecture behavioral of entity main [main_default]
+Compiling architecture behavior of entity testbraet
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design

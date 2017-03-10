@@ -5,28 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 67: <arg fmt="%s" index="1">count_2</arg> should be on the sensitivity list of the process
+<msg type="error" file="HDLCompiler" num="1728" delta="new" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 103: Type error near <arg fmt="%s" index="1">hvorlaeses</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">integer</arg>
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 77: <arg fmt="%s" index="1">switch_ting</arg> should be on the sensitivity list of the process
+<msg type="error" file="HDLCompiler" num="539" delta="old" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 103: Indexed name is not a <arg fmt="%s" index="1">std_logic_vector</arg>
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 97: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 100: <arg fmt="%s" index="1">outsignal</arg> should be on the sensitivity list of the process
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 45: Net &lt;<arg fmt="%s" index="1">outSignal[7]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 50: Net &lt;<arg fmt="%s" index="1">count[8]</arg>&gt; does not have a driver.
-</msg>
-
-<msg type="warning" file="Xst" num="2935" delta="new" >Signal &apos;<arg fmt="%s" index="1">outSignal</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">main</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000</arg>).
-</msg>
-
-<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">count</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">main</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">000000000</arg>).
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"C:\New_Blank_Circuit\circuit\main_main.vhd" Line 41: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>
