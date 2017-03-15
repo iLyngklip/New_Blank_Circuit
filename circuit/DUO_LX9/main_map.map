@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Mar 15 09:56:56 2017
+Mapped Date    : Wed Mar 15 10:21:26 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,53 +19,57 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 4 secs 
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:d49ecbc2) REAL time: 3 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:caefb61c) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:d49ecbc2) REAL time: 3 secs 
+INFO:Place:834 - Only a subset of IOs are locked. Out of 9 IOs, 1 are locked and
+   8 are not locked. If you would like to print the names of these IOs, please
+   set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:caefb61c) REAL time: 5 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:d49ecbc2) REAL time: 3 secs 
+Phase 3.31  Local Placement Optimization (Checksum:caefb61c) REAL time: 5 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:c92a3025) REAL time: 4 secs 
+(Checksum:bf7b1a7f) REAL time: 5 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:c92a3025) REAL time: 4 secs 
+Phase 5.36  Local Placement Optimization (Checksum:bf7b1a7f) REAL time: 5 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:c92a3025) REAL time: 4 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:bf7b1a7f) REAL time: 5 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:c92a3025) REAL time: 4 secs 
+
+Phase 7.3  Local Placement Optimization (Checksum:5b62aa87) REAL time: 5 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c92a3025) REAL time: 4 secs 
+Phase 8.5  Local Placement Optimization (Checksum:5b62aa87) REAL time: 5 secs 
 
 Phase 9.8  Global Placement
-............................
-............................
-Phase 9.8  Global Placement (Checksum:4705e03) REAL time: 4 secs 
+..
+..
+Phase 9.8  Global Placement (Checksum:d8b16f5) REAL time: 5 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:4705e03) REAL time: 4 secs 
+Phase 10.5  Local Placement Optimization (Checksum:d8b16f5) REAL time: 5 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:a73cfea3) REAL time: 4 secs 
+Phase 11.18  Placement Optimization (Checksum:78087cc5) REAL time: 5 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:a73cfea3) REAL time: 4 secs 
+Phase 12.5  Local Placement Optimization (Checksum:78087cc5) REAL time: 5 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:a73cfea3) REAL time: 4 secs 
+Phase 13.34  Placement Validation (Checksum:78087cc5) REAL time: 5 secs 
 
-Total REAL time to Placer completion: 4 secs 
+Total REAL time to Placer completion: 5 secs 
 Total CPU  time to Placer completion: 4 secs 
 Running post-placement packing...
 Writing output files...
@@ -117,7 +121,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                         9 out of     102    8%
-    Number of LOCed IOBs:                        9 out of       9  100%
+    Number of LOCed IOBs:                        1 out of       9   11%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -146,8 +150,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.15
 
-Peak Memory Usage:  370 MB
-Total REAL time to MAP completion:  4 secs 
+Peak Memory Usage:  369 MB
+Total REAL time to MAP completion:  6 secs 
 Total CPU time to MAP completion:   4 secs 
 
 Mapping completed.

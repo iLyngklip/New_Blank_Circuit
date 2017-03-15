@@ -5396,166 +5396,6 @@ INFO:ConstraintSystem:59 - Constraint <SLEW=SLOW;>
    1. The specified design element actually exists in the original design.
    2. The specified object is spelled correctly in the constraint source file.
 
-INFO:ConstraintSystem:59 - Constraint <NET inp(0)		LOC="P116" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(289)]: NET "inp(0)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(0)		LOC="P116" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(289)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(289)]: NET "inp(0)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-INFO:ConstraintSystem:59 - Constraint <NET inp(1)		LOC="P117" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(290)]: NET "inp(1)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(1)		LOC="P117" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(290)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(290)]: NET "inp(1)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-INFO:ConstraintSystem:59 - Constraint <NET inp(2)		LOC="P118" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(291)]: NET "inp(2)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(2)		LOC="P118" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(291)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(291)]: NET "inp(2)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-INFO:ConstraintSystem:59 - Constraint <NET inp(3)		LOC="P119" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(292)]: NET "inp(3)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(3)		LOC="P119" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(292)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(292)]: NET "inp(3)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-INFO:ConstraintSystem:59 - Constraint <NET inp(4)		LOC="P120" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(293)]: NET "inp(4)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(4)		LOC="P120" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(293)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(293)]: NET "inp(4)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-INFO:ConstraintSystem:59 - Constraint <NET inp(5)		LOC="P62" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(294)]: NET "inp(5)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(5)		LOC="P62" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(294)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(294)]: NET "inp(5)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-INFO:ConstraintSystem:59 - Constraint <NET inp(6)		LOC="P59" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(295)]: NET "inp(6)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(6)		LOC="P59" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(295)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(295)]: NET "inp(6)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-INFO:ConstraintSystem:59 - Constraint <NET inp(7)		LOC="P57" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(296)]: NET "inp(7)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET inp(7)		LOC="P57" |>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(296)]' could not be found and so the
-   Locate constraint will be removed.
-
-INFO:ConstraintSystem:59 - Constraint <IOSTANDARD=LVTTL;>
-   [C:/DesignLab-1.0.8/examples/00.Papilio_Schematic_Library/Libraries/ZPUino_1/
-   PSL_Papilio_DUO_LX9/papilio_duo.ucf(296)]: NET "inp(7)" not found.  Please
-   verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
 Done...
 
 Checking expanded design ...
@@ -5569,12 +5409,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 226
+  Number of warnings: 218
 
-Total memory usage is 187184 kilobytes
+Total memory usage is 187632 kilobytes
 
 Writing NGD file "main.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "main.bld"...
