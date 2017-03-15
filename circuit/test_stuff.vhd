@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   12:59:21 03/10/2017
+-- Create Date:   12:46:41 03/15/2017
 -- Design Name:   
--- Module Name:   C:/New_Blank_Circuit/circuit/TestBraet.vhd
+-- Module Name:   C:/New_Blank_Circuit/circuit/test_stuff.vhd
 -- Project Name:  PSL_Papilio_DUO_LX9
 -- Target Device:  
 -- Tool versions:  
@@ -32,10 +32,10 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY TestBraet IS
-END TestBraet;
+ENTITY test_stuff IS
+END test_stuff;
  
-ARCHITECTURE behavior OF TestBraet IS 
+ARCHITECTURE behavior OF test_stuff IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  

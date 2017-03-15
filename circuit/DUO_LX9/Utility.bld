@@ -1,0 +1,47 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ../../../DesignLab-1.0.8/libraries/Benchy -sd
+../../../DesignLab-1.0.8/libraries/BitCoin_Miner -sd
+../../../DesignLab-1.0.8/libraries/Building_Blocks -sd
+../../../DesignLab-1.0.8/libraries/Clocks -sd
+../../../DesignLab-1.0.8/libraries/Gameduino -sd
+../../../DesignLab-1.0.8/libraries/HQVGA -sd
+../../../DesignLab-1.0.8/libraries/Papilio_Hardware -sd
+../../../DesignLab-1.0.8/libraries/RGB_Matrix -sd
+../../../DesignLab-1.0.8/libraries/Robot_Control_Library -sd
+../../../DesignLab-1.0.8/libraries/VGA_ZPUino -sd
+../../../DesignLab-1.0.8/libraries/VGA_ZXSpectrum -sd
+../../../DesignLab-1.0.8/libraries/ZPUino_2 -sd
+../../../DesignLab-1.0.8/libraries/ZPUino_Wishbone_Peripherals -aul -nt
+timestamp -i -p xc6slx9-tqg144-2 Utility.ngc Utility.ngd
+
+Reading NGO file "C:/New_Blank_Circuit/circuit/DUO_LX9/Utility.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 157368 kilobytes
+
+Writing NGD file "Utility.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "Utility.bld"...

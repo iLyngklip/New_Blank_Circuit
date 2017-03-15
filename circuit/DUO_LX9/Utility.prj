@@ -1,0 +1,2 @@
+vhdl DesignLab "../../../DesignLab-1.0.8/libraries/Papilio_Hardware/Wing_GPIO.vhd"
+vhdl work "Utility.vhf"

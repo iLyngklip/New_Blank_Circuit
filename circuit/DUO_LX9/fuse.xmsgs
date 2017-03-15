@@ -5,6 +5,9 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1587" delta="unknown" >"N:/P.20131013/rtf/vhdl/src/ieee/std_logic_textio.vhd" Line 34: Read failed due to size mismatch
+</msg>
+
 <msg type="error" file="Simulator" num="861" delta="unknown" >Failed to link the design
 </msg>
 
