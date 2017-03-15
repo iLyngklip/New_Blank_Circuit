@@ -43,37 +43,62 @@ architecture Behavioral of main is
 
 	-- This signal is what should be send to the LEDs
 	signal outSignal: STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-type mem is array (3 downto 0) of std_logic_vector(15 downto 0);
-signal t_mem : mem;
+	
+	
+	
+	
+	type RamType is array(127 downto 0) of STD_LOGIC_VECTOR(15 downto 0);
+	
+	impure function InitRamFromFile (RamFileName : in string) return RamType is 
+	FILE RamFile : text is in RamFileName;
+	variable RamFileLine : line;
+	variable RAM : RamType;
+	
+	begin for I in RamType'range loop
+	if not endfile(RamFile) then
+		readline(RamFile,RamFileLine);
+		read(RamFileLine,RAM(I)); 
+		end if;
+	end loop;
+		return RAM;
+		end function;
+		signal RAM : RamType := InitRamFromFile("wave.dat");
 
-signal tempTing : unsigned (30 downto 0) := (others => '0');
 
+--
+--type mem is array (3 downto 0) of std_logic_vector(15 downto 0);
+--signal t_mem : mem;
+--
+--signal tempTing : unsigned (30 downto 0) := (others => '0');
+--
 signal count : unsigned (8 downto 0) := (others => '0');
 signal count_2 : unsigned (30 downto 0) := (others => '0');
 signal switch_ting : std_logic := '1';
 signal clk_2 : std_logic;
-
-
--- variable i : integer:=0;
-
-    type rom_type is array(0 to 5) of bit_vector(7 downto 0);  
-	 
-    impure function megetROM (file_name_to_use : in string) return rom_type is                                                   
-       FILE rom_file         : text is in file_name_to_use;                       
-       variable line_name : line;                                 
-       variable rom_name       : rom_type;                                      
-    begin                                                        
-       for I in rom_type'range loop                                  
-           readline (rom_file, line_name);                             
-           read (line_name, rom_name(I));                                  
-       end loop;                                                    
-       return rom_name;                                                  
-    end function;                                                
-
-    signal rom_name : rom_type := megetROM("wave.dat");
-
-
+signal tempStorage : std_logic_vector(15 downto 0);
+--
+--
+---- variable i : integer:=0;
+--
+--    type rom_type is array(0 to 5) of bit_vector(7 downto 0);  
+--	 
+--    impure function megetROM (file_name_to_use : in string) return rom_type is                                                   
+--       FILE rom_file         : text is in file_name_to_use;                       
+--       variable line_name : line;                                 
+--       variable rom_name       : rom_type;                                      
+--    begin                                                        
+--       for I in rom_type'range loop                                  
+--           readline (rom_file, line_name);                             
+--           read (line_name, rom_name(I));                                  
+--       end loop;                                                    
+--       return rom_name;                                                  
+--    end function;                                                
+--
+--    signal rom_name : rom_type := megetROM("wave.dat");
+--
+--
 begin
+
 process(clk)
 begin
 		if clk='1' and clk'event then 
@@ -95,15 +120,31 @@ end process;
 --				
 variable hvorLaeses : std_logic_vector (1 downto 0) := "00";
 --variable hvorLaeses : integer := 5;
-    begin 
+variable WhereToRead : integer := 0;
+begin
+	if clk_2='1' and clk_2'event then
+		tempStorage <= RAM(WhereToRead);
+		outp(0) <= tempStorage(0);
+		outp(1) <= tempStorage(1);
+		outp(2) <= tempStorage(2);
+		outp(3) <= tempStorage(3);
+		outp(4) <= tempStorage(4);
+		outp(5) <= tempStorage(5);
+		outp(6) <= tempStorage(6);
+		outp(7) <= tempStorage(7);
+		
+		
+		-- tempStorage <= tempStorage & "0";
+		
+		
+		-- outp <= RAM(WhereToRead) srl 8;
+		WhereToRead := WhereToRead + 1;
+	end if;
+end process; 
 
 	 
-if clk_2='1' and clk_2'event then    
 
-outp <= rom_name(hvorLaeses);
-
-end if;
-end process;
+--end process;
 --
 --        --while not endfile(input_file) loop
 --		  
